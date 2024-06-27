@@ -18,30 +18,40 @@
      <link rel="stylesheet" href="css/style.css">
     <!-- JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.3.0-rc.1/jquery.visible.min.js"></script>
     <!-- JAVASCRIPT-->
     <script src="js/index.js"></script>
 </head>
 <body>
 
-    <section class="inicio bg p-5">
-        <img src="img/fotocurri.jpg" alt="Foto de persona" class="img-fluid img-header mb-3">
-        <h1 class="text-center text-white mt-5">Exequiel</h1>
-        <header class="container-fluid img-fluid d-flex justify-content-center">
-            <ul class="d-flex align-items-end gap-5 mb-5 list-unstyled mt-5">
-                <li><a href="https://github.com/xtron3r" target="_blank" ><i class="bi bi-github github"></i></a></li>
-                <li><a href="https://www.twitch.tv/xtroner" target="_blank"><i class="bi bi-twitch twitch"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/aron-exequiel-389627264/" target="_blank" ><i class="bi bi-linkedin linkedin"></i></a></li>
-                <li><a href="https://wa.me/56930935460" target="_blank" > <i class="bi bi-whatsapp whatsapp"></i></a></li>
-            </ul>         
-        </header>
+    <section class="inicio bg d-flex align-items-center justify-content-center">
+        <div class="row w-100 d-flex justify-content-center">
+            <div class="col-lg-5 col-md-6 col-sm-6 text-center">
+                <img src="img/fotocurri.jpg" alt="Foto de persona" class="img-fluid img-header mb-3 rounded-circle border border-white">
+                <h1 class="text-center text-white mt-3">Aron Exequiel</h1>
+                <p class="text-center text-white mt-3">2do año de Ingeniería en Informática <strong><a href="https://www.duoc.cl/alumnos/ava-blackboard/" target="_blank" class="link-duoc mt-5"><img src="img/duoc.png" class="img-duoc" alt="">DUOC UC</strong></a></p>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6 text-center d-flex flex-column justify-content-center">
+                <h3 class="text-center text-white fs-1 mt-5"><strong>Contactame</strong></h3>
+                <p class="text-center text-white mt-3">¡Hablemos sobre proyectos, tecnología y más!</p>
+                <header class="d-flex justify-content-center">
+                    <ul class="d-flex align-items-center gap-4 list-unstyled mt-3">
+                        <li><a href="https://www.twitch.tv/xtroner" target="_blank"><i class="bi bi-twitch twitch"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/aron-exequiel-389627264/" target="_blank"><i class="bi bi-linkedin linkedin"></i></a></li>
+                        <li><a href="https://wa.me/56930935460" target="_blank"><i class="bi bi-whatsapp whatsapp"></i></a></li>
+                        <li><a href="https://github.com/xtron3r" target="_blank"><i class="bi bi-github github"></i></a></li>
+                    </ul>         
+                </header>
+            </div>
+        </div>
     </section>
 
     <section class="sobre-mi mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h2 class="text-center mb-4"><i class="bi bi-file-person"> </i>Sobre <strong>mi</strong></h2>
-                    <p class="text-justify">Estudiante de Ingeniería en Informática, altamente
+                <div class="col-lg-6 col-md-6 col-sm-12 border-bottom-sm">
+                    <h2 class="text-center mb-4"><i class="bi bi-file-person"></i> Sobre <strong>mi</strong></h2>
+                    <p class="text-justify text-center ">Estudiante de Ingeniería en Informática, altamente
                         creativo, empático y comprometido. Me encanta el
                         fútbol, que considero la mejor forma de adquirir
                         conocimientos tácticos. Mi equipo favorito es siempre
@@ -49,13 +59,11 @@
                         objetivos es completar mi carrera universitaria mientras mejoro día a día. Mi pasatiempo favorito es jugar al
                         fútbol o videojuegos. Soy una persona paciente,
                         altamente motivada en todo lo que me propongo e
-                        interesado en aprender.
-                        
+                        interesado en aprender. 
                     </p>
-                    <img src="" alt="">
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h2 class="text-center mb-4"><i class="bi bi-mortarboard-fill"> </i>Estudios</h2>
+                    <h2 class="text-center mb-4"><i class="bi bi-mortarboard-fill"></i> Estudios</h2>
                     <h6 class="text-center mb-4"><b>ESTUDIOS COMPLETOS</b></h6>
                     <ul class="list-unstyled text-center">
                         <li class="mb-3">
@@ -68,7 +76,7 @@
                             <p class="bi-dot"><b>IP DuocUC</b> <span>|</span> <b>2023 - 2024</b></p>
                         </li>
                         <ul class="list-unstyled mt-4">
-                            <h6 class="text-center"><b>EDUCACION SUPERIOR (EN CURSO)</b></h6>
+                            <h6 class="text-center"><b>EDUCACIÓN SUPERIOR (EN CURSO)</b></h6>
                             <li class="mt-4 mb-3">
                                 <p class="bi-dot"><b>Ingeniería en Informática</b> <span>|</span> <b>2023 - ACT</b></p>
                             </li>
@@ -79,28 +87,50 @@
         </div>
     </section>
 
-    <main class="container-fluid mt-5 bg-black">
-        <h2 class="text-white p-5"><i class="bi bi-laptop"></i> <strong>Tech Stack</strong></h2>
-        <ul class="list-unstyled">
-            <li class="p-5">
+    <main class="container-fluid mt-5 p-5 bg-black">
+        <h2 class="text-white text-center"><i class="bi bi-laptop"></i> <strong>Tech Stack</strong></h2>
+        <div class="row justify-content-center mt-5 text-center">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-3">
                 <img src="img/html-5.png" alt="" class="img-fluid img-tech">
-            </li>
-            <li class="p-5">
-                <img src="img/css.png" alt="" class="img-fluid">
-            </li>
-            <li class="p-5">
-                <img src="img/js.png" alt="" class="img-fluid">
-            </li>
-            <li class="p-5">
-                <img src="img/php.png" alt="" class="img-fluid">
-            </li>
-            <li class="p-5">
-                <img src="img/mysql.png" alt="" class="img-fluid">
-            </li>
-            <li class="p-5">
-                <img src="img/bootstrap.png" alt="" class="img-fluid">
-            </li>
-        </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 mt-3">
+                <img src="img/css-3.png" alt="" class="img-fluid img-tech">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 mt-3">
+                <img src="img/bootstrap-stack.png" alt="" class="img-fluid img-tech">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 mt-3">
+                <img src="img/js.png" alt="" class="img-fluid img-tech">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 mt-3">
+                <img src="img/jquery.png" alt="" class="img-fluid img-tech">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 mt-3">
+                <img src="img/servidor-sql.png" alt="" class="img-fluid img-tech">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 mt-3">
+                <img src="img/django-icon.svg" alt="" class="img-fluid img-tech">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 mt-3">
+                <img src="img/piton.png" alt="" class="img-fluid img-tech">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 mt-3">
+                <img src="img/java.png" alt="" class="img-fluid img-tech">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 mt-3">
+                <img src="img/github1.png" alt="" class="img-fluid img-tech">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 mt-3">
+                <img src="img/gpt.png" alt="" class="img-fluid img-tech">
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4 mt-3">
+                <img src="img/vs.png" alt="" class="img-fluid img-tech">
+            </div>
+        </div>
     </main>
+
+    <section>
+        <h2 class="text-white text-center"><i class="bi bi-laptop"></i> <strong>Repository</strong></h2>
+    </section>
 </body>
 </html>

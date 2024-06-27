@@ -11,47 +11,59 @@ body{
     background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30rem;
+    height: 100vh; /* Asegura que cubra el 100% de la pantalla*/
+}
+
+.link-duoc{
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: block;
+}
+.link-duoc:hover{
+    transform: scale(1.5);
+}
+
+.img-duoc{
+    width: 55px;
+    margin-right: 10px;
 }
 
 .img-header{
-    width: 200px;
-    border-radius: 10rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 20rem;
+    border-radius: 15rem;
 }
 
 .github{
     color: grey;
-    font-size: 25px;
+    font-size: 55px;
     transition: transform 0.3s ease;
     display: inline-block;
 }
 
 .twitch{
     color: blueviolet;
-    font-size: 25px;
+    font-size: 55px;
     transition: transform 0.3s ease;
     display: inline-block;
 }
 
 .youtube{
     color: red;
-    font-size: 25px;
+    font-size: 55px;
     transition: transform 0.3s ease;
     display: inline-block;
 }
 
 .linkedin{
-    font-size: 25px;
+    font-size: 55px;
     transition: transform 0.3s ease;
     display: inline-block;
 }
 
 .whatsapp{
     color: green;
-    font-size: 25px;
+    font-size: 55px;
     transition: transform 0.3s ease;
     display: inline-block;
 }
@@ -62,9 +74,17 @@ body{
 
 /* SOBRE MI */
 
+@media (max-width: 767.98px) {
+    .border-bottom-sm {
+        border-bottom: 1px solid #000;
+        margin-bottom: 30px;
+    }
+}
+
 strong{
  text-decoration: underline #ff00ff;
  text-decoration-thickness: 3px;
+ text-underline-offset: 15px;
 }
 
 span{
@@ -74,7 +94,16 @@ span{
     display: inline-block;;
 }
 
+
+/* TECH STACK*/
+
 .img-tech{
     width: 80px;
+    opacity: 0; /* Inicialmente ocultar las imágenes */
+    transition: opacity 3.0s ease-in-out; /* Transición suave */
+}
+
+.loaded{
+    opacity: 1;
 }
 
