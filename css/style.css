@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    font-family: Montserrat;
+    background-color: rgb(194, 194, 194);
+}
+
+/* HEADER CV */
+.bg{
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+.img-header{
+    width: 200px;
+    border-radius: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.github{
+    color: grey;
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.twitch{
+    color: blueviolet;
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.youtube{
+    color: red;
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.linkedin{
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.whatsapp{
+    color: green;
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.github:hover, .twitch:hover, .linkedin:hover, .whatsapp:hover {
+    transform: scale(1.6); 
+}
+
+/* SOBRE MI */
+
+strong{
+ text-decoration: underline #ff00ff;
+ text-decoration-thickness: 3px;
+}
+
+span{
+    color: #ff00ff;
+    background-color: #ff00ff;
+    font-size: 15px;
+    display: inline-block;;
+}
+
+.img-tech{
+    width: 80px;
+}
+
